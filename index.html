@@ -1,18 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="css/style.css" rel="stylesheet">
+	<title>Example</title>
+	<style>
+        body{
+            text-align: center;
+        }
+		.block{
+			display: inline;
+            color: white;
+			background-color: blue;
+			padding: 10px;
+            height: 200px;
+            width: 200px;
+			margin: 10px;
+            box-sizing: content-box;
+		}
+        .block1{
+			display: inline-block;
+            color: white;
+			background-color: red;
+			padding: 10px;
+            height: 200px;
+            width: 200px;
+			margin: 10px;
+            box-sizing: content-box;
+		}
+        .block2{
+			display: block;
+            color: white;
+			background-color: green;
+			padding: 10px;
+            height: 200px;
+            width: 200px;
+			margin: 10px;
+            box-sizing: content-box;
+		}
+	</style>
 </head>
 <body>
-  <div class="box">
-      <p>This is a paragrpah inside a box</p>
-  </div>
-  <div class="box">
-      <p>This is a paragrpah inside a box</p>
-  </div>
+	<div class="block">This is first box</div>
+    <div class="block">This is second box</div>
+    <div class="block">This is third box </div>
+    <br>
+    
+	<div class="block1">This is first box</div>
+    <div class="block1">This is second box</div>
+    <div class="block1">This is third box </div>
+    <br>
+    
+	<div class="block2">This is first box</div>
+    <div class="block2">This is second box</div>
+    <div class="block2">This is third box </div>
 </body>
 </html>

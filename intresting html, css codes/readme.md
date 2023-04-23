@@ -1,0 +1,1 @@
+-----The codes in this particular "intresting html, css codes" doesn't belong to me anyhow, these are open source codes avaialble in internet--------
