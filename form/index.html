@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="mahform" action="#" method="POST">
+        Name
+        <input type="text" id="name" name="Name" required placeholder="Your name">
+        Email <input type="email" id="email" name="email" required placeholder="Email Address">
+        Password<input type="password" id="passwd1" name="Password" required placeholder="Password">
+        Renter your password<br><input type="password" id="passwd2" name="password" required
+            placeholder="Re-enter your password">
+        <input type="submit" onclick="auth()" />
+    </form>
+    <script>
+
+        const form = document.getElementById("form");
+        var name = document.getElementById("name");
+        var email = document.getElementById("email");
+        var passwd1 = document.getElementById("passwd1");
+        var passwd2 = document.getElementById("passwd2");
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        function auth() 
+        {
+            // event.preventDefault();
+            if (!nameInput.value) {
+                alert('Please enter your name');
+                return;
+            }
+
+            if (!emailInput.value || !emailRegex.test(emailInput.value)) {
+                alert('Please enter a valid email');
+                return;
+            }
+
+            if (!passwordInput.value || !passwordRegex.test(passwordInput.value)) {
+                alert('Password must be at least 8 characters and contain at least one letter and one number');
+                return;
+            }
+            if (passwd1 != passwd2) {
+                alert("The passwords doesn't matches, try again");
+            }
+        }
+    </script>
+</body>
+
+</html>
