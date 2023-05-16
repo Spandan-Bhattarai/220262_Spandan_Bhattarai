@@ -14,7 +14,7 @@ function func(event) {
         if (!answer) {
             alert('Please answer all questions');
             return;
-        }
+        } 
 
         if (answer.value === answers[i - 1]) {
             score++;
