@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #demo {
+            border: 1px solid black;
+            background-color: beige;
+            margin-left: 25%;
+            margin-right: 25%;
+            margin-top: 20px;
+        }
+
+        .butt {
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores facilis provident corrupti sapiente <br />
+        ad quam esse quas labore ipsum harum? Amet fugit deleniti aspernatur itaque placeat! Voluptatem molestias
+        maiores ullam.
+    </div>
+    <div class="butt">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="lmode()">Light mode</button> &nbsp;&nbsp;&nbsp;
+        <button onclick="dmode()">dark mode</button> &nbsp;&nbsp;&nbsp;
+        <button onclick="showhide_contain()">Show/hide the container</button>
+    </div>
+    <script>
+        function showhide_contain() {
+            var container = document.getElementById("demo");
+            if (container.style.display === "none") {
+                container.style.display = "block";
+            } else {
+                container.style.display = "none";
+            }
+        }
+        function lmode() {
+            document.body.style.backgroundColor = "white";
+        }
+        function dmode() {
+            document.body.style.backgroundColor = "grey";
+        }
+    </script>
+</body>
+
+</html>

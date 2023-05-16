@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <h3>Question 1</h3>
+            <p>What is the capital of France?</p>
+            <input type="radio" name="q1" value="a" required> a) London<br>
+            <input type="radio" name="q1" value="b"> b) Paris<br>
+            <input type="radio" name="q1" value="c"> c) Madrid<br>
+
+            <h3>Question 2</h3>
+            <p>What is the largest country in the world?</p>
+            <input type="radio" name="q2" value="a"> a) USA<br>
+            <input type="radio" name="q2" value="b"> b) Russia<br>
+            <input type="radio" name="q2" value="c" required> c) China<br>
+
+            <h3>Question 3</h3>
+            <p>What is the currency of Japan?</p>
+            <input type="radio" name="q3" value="a"> a) Yen<br>
+            <input type="radio" name="q3" value="b"> b) Yuan<br>
+            <input type="radio" name="q3" value="c" required> c) Euro<br>
+
+            <input type="submit" value="Submit" onclick="func(event)">
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
