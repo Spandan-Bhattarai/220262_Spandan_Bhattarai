@@ -1,0 +1,70 @@
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: #111;}
+  
+  ul.topnav li a.active {background-color: #04AA6D;}
+  
+  
+  @media screen and (max-width: 600px) 
+  {
+    ul.topnav li 
+    {
+      float: none;
+    }
+  }
+  
+  /* Style the "Who we are" section */
+  section {
+    padding: 50px;
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the contact form */
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  form label {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
